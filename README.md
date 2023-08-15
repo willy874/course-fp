@@ -21,7 +21,7 @@
 
 ramda
 rxjs
-lodash
+lodash/fp
 
 ## 常用的 Pattern
 

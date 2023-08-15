@@ -19,7 +19,6 @@ const curry = (fn, ...args) => {
 // console.log(curry(add)(1, 2, 3));
 // console.log(curry(add)(1, 2, 3, 4));
 // console.log(curry(add)(1)(2)(3)(4));
-
 // Case
 
 const immediateCallbackA = (fn) => {
@@ -68,10 +67,10 @@ function test1() {
   })
 }
 /** File(2) */
-test1().then((res) => {
-  const [a, b, c, d] = res
-  console.log('test1', add(a, b, c, d));
-})
+// test1().then((res) => {
+//   const [a, b, c, d] = res
+//   console.log('test1', add(a, b, c, d));
+// })
 
 // Curry Function Code
 /** File(1) */
@@ -91,4 +90,3 @@ createHandler()
   .then(handleC)
   .then(handleD)
   .then((res) => console.log('test2', res))
-
